@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background: rgb(136, 217, 255);
+    box-sizing: border-box;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+h1{
+    margin: 15px auto;
+    color:white;
+}
+.b2,.b1{
+    padding: 10px 50px;
+
+}
+button{
+    border-radius: 10%;
+    padding:15px 65px;
+    text-align: center;
+    /* box-sizing: border-box; */
+    font-size:25px;
+    display: flex;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #fff;
+    border: 2px solid ;
+    border-color: orange red green yellow;
+
+}
+button:hover{
+    background: white;
+    border: none;
+    color:rgb(136, 217, 255);
+}
+
+.gallery{
+    border: 30px solid rgb(255, 255, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   object-fit: cover;
+   padding:30px 30px;
+}
+img{
+    border: 7px solid rgb(255, 255, 255);
+    width:300px;
+    height:450px;
+    margin:10px;
+    transition:  width 0.75s, height 0.75s ;
+    box-shadow: grey ;
+    cursor: pointer;
+
+}
+img:hover{
+    width:320px;
+    height: 470px;
+    animation: animate 1s ;
+    z-index: 10;
+    border-color: navy;
+    
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotateZ(20deg);
+    }
+    60%{
+transform: rotateZ(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
